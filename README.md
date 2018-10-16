@@ -1,2 +1,2 @@
 # qwalkkadog
-Quokka group project
+Third week Friday group project
