@@ -1,5 +1,5 @@
 const webpack = require ('webpack')
-const HTMLWebpackPlugin = require ('html-webpack-plugin
+const HtmlWebpackPlugin = require ('html-webpack-plugin')
 
 const port = process.env.PORT || 3000
 
@@ -7,7 +7,6 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   output: {
-    path: '../server/public',
     filename: 'bundle.[hash].js'
   },
   devtool: 'inline-source-map',
@@ -39,7 +38,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'public/index.html',
-      favicon: 'public/favicon.ico'
+      // favicon: 'public/favicon.ico'
     })
   ],
   devServer: {
